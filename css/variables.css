@@ -1,0 +1,62 @@
+:root {
+    /*Colores*/
+    --color-primario: #5B2A86;
+    --color-primario-oscuro: #40205F;
+    --color-acento: #F2C14E;
+    --color-fondo: #F7F4FB;
+    --color-superficie: #FFFFFF;
+    --color-texto: #241B2F;
+    --color-texto-suave: #5F566B;
+    --color-borde-suave: #DCD5E5;
+    --color-enlace: #5B2A86;
+    --color-texto-sobre-primario: #FFFFFF;
+    --color-texto-sobre-acento: #241B2F;
+
+    /*tipografia*/
+    --fuente-titulos: Fredoka, sans-serif;
+    --fuente-texto: Nunito, sans-serif;
+
+    --tamano-texto-base: 16px;
+    --tamano-entradilla: 20px;
+    --tamano-pequeno: 14px;
+
+    --tamano-portada-movil: 40px;
+    --tamano-portada-escritorio: 56px;
+    --tamano-h1-movil: 32px;
+    --tamano-h2-movil: 26px;
+    --tamano-h3-movil: 20px;
+    --tamano-h1-escritorio: 44px;
+    --tamano-h2-escritorio: 32px;
+    --tamano-h3-escritorio: 24px;
+
+    --interlineado-texto: 1.5;
+    --interlineado-titulos: 1.2;
+    --interlineado-portada: 1.1;
+
+    /*espacios*/
+    --espacio-4: 4px;
+    --espacio-8: 8px;
+    --espacio-16: 16px;
+    --espacio-24: 24px;
+    --espacio-32: 32px;
+    --espacio-48: 48px;
+    --espacio-64: 64px;
+
+    /*reticula*/
+    --ancho-maximo: 1120px;
+    --margen-lateral: 16px;
+    --medianil: 16px;
+
+    /*Formas*/
+    --radio-etiqueta: 4px;
+    --radio-tarjeta: 12px;
+    --radio-boton: 999px; /* totalmente redondeado */
+    --sombra: 0 2px 8px rgb(36 27 47 / 0.12);
+}
+
+@media (min-width: 48rem) {
+    :root {
+        --margen-lateral: 24px;
+        --medianil: 24px;
+    }
+}
