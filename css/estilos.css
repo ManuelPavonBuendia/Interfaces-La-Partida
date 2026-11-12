@@ -152,25 +152,64 @@ svg{
 }
 
     /*Menu*/
-.menu ul{
 
-}
-
-.menu a{
-    font-weight: 700;
+.menu a{ 
+    text-decoration: none;
+    font-weight: bold;
     color:var(--color-texto);
-    
-
 }
 
-.menu a:hover{
-
+.menu a[aria-current="page"], .menu a:hover{
+    color: var(--color-enlace);
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
 }
 
-.menu a[aria-current="page"]{
-    
+    /*Evento*/
 
+.evento-fecha {
+    margin-left: 72px;
+    padding: 8px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-sobre-primario);
+    text-transform: uppercase;
+    margin: 16px;
 }
+
+.evento-dia {
+    font-family: var(--fuente-titulos);
+    font-size: 28px;
+}
+
+.evento-datos, .evento-titulo{
+    color: var(--color-texto-suave);
+    text-align: center;
+}
+
+.evento{
+    border-bottom: 1px solid;
+}
+
+    /*Cifra*/
+
+.cifra-numero{
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamano-portada-movil);
+    color: var(--color-acento);
+}
+
+.cifra:not(.cifra-numero){
+    text-align: center;
+}
+
+    /*Precio*/
+.precio{
+    padding: var(--espacio-24);
+    border: 2px;
+    border-color: var(--color-borde-suave);
+}
+
 /* 3. Utilidades*/
 
 
