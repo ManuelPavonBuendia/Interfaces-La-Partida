@@ -59,8 +59,118 @@ svg{
 
 
 /* 2. Componentes*/
+.boton{
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: var(--espacio-24);
+    padding-right: var(--espacio-24);
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--color-primario);
+    color: var(--color-texto-sobre-primario);
+    border: 2px solid var(--color-primario);
+    border-radius: var(--radio-boton);
+    
+}
 
+    /*boton*/
+.boton:hover{
+    background-color: var(--color-primario-oscuro);
+    border-color: var(--color-primario-oscuro);
+}
+.boton-contorno{
+    background-color: transparent;
+    border-color: var(--color-enlace);
+    color:var(--color-enlace);
+}
 
+.boton.boton-contorno:hover{
+    background-color: var(--color-superficie);
+    border-color: var(--color-enlace);
+}
+
+    /*etiqueta*/
+.etiqueta{
+    display: inline-block;
+    padding: var(--espacio-4) var(--espacio-8);
+    border-radius: var(--radio-etiqueta);
+    font-size: var(--tamano-pequeno);
+    font-weight: 700;
+    background-color: var(--color-acento);
+    color:var(--color-texto-sobre-acento);
+}
+
+.etiqueta-completo{
+    background-color: var(--color-borde-suave);
+    color:var(--color-texto);
+}
+.etiqueta-esquina{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.precio-destacado .etiqueta{
+    position:absolute;
+    top:0;
+    right: auto;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+    /*tarjeta*/
+.tarjeta{
+    position: relative;
+    padding: var(--espacio-24);
+    background-color: var(--color-superficie);
+    border-radius: var(--radio-tarjeta);
+    box-shadow: var(--sombra);
+}
+.tarjeta-icono{
+    color:var(--color-enlace);
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--espacio-16);
+}
+
+    /*logo*/
+.logo{
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espacio-8);
+    font-family: var(--fuente-titulos);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-enlace);
+}
+
+.logo svg{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+    /*Menu*/
+.menu ul{
+
+}
+
+.menu a{
+    font-weight: 700;
+    color:var(--color-texto);
+    
+
+}
+
+.menu a:hover{
+
+}
+
+.menu a[aria-current="page"]{
+    
+
+}
 /* 3. Utilidades*/
 
 
