@@ -208,8 +208,55 @@ svg{
     padding: var(--espacio-24);
     border: 2px;
     border-color: var(--color-borde-suave);
+    background-color: var(--color-superficie);
 }
 
+.precio-importe{
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamano-h1-movil);
+}
+
+.precio-unidad{
+    font-size: var(--tamano-texto-base);
+    color: var(--color-texto-suave);
+}
+
+.precio-lista li::marker{
+    color: var(--color-enlace);
+}
+
+.precio a{
+    margin-top: auto;
+}
+
+.precio-destacado{
+    border-color: var(--color-acento);
+}
+
+.tabla{
+
+    margin: 640px;
+}
+
+.tabla th{
+    padding: 12px,16px;
+    border-bottom: 1px solid;
+}
+
+.tabla caption{
+    background-color: var(--color-primario-oscuro);
+    color: var(--color-texto-sobre-primario);
+    font-weight: bold;
+    text-align: left;
+}
+
+.tabla tr:nth-child(even){
+    background-color: var(--color-fondo);
+}
+
+.numero{
+    text-align: right;
+}
 /* 3. Utilidades*/
 
 
