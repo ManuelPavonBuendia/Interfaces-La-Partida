@@ -110,13 +110,6 @@ svg{
     top: 16px;
     right: 16px;
 }
-.precio-destacado .etiqueta{
-    position:absolute;
-    top:0;
-    right: auto;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
 
     /*tarjeta*/
 .tarjeta{
@@ -181,6 +174,14 @@ svg{
 
     /*Evento*/
 
+.evento{
+    display: flex;
+    align-items: center;
+    gap: var(--espacio-16);
+    padding: var(--espacio-16) 0;
+    border-bottom: 1px solid var(--color-borde-suave);
+}
+
 .evento-fecha {
     display: flex;
     flex: 0 0 72px;
@@ -211,15 +212,11 @@ svg{
     color: var(--color-texto-suave);
 }
 
-.evento{
-    display: flex;
-    align-items: center;
-    gap: var(--espacio-16);
-    padding: var(--espacio-16) 0;
-    border-bottom: 1px solid var(--color-borde-suave);
-}
-
     /*Cifra*/
+
+.cifra{
+    text-align: center;
+}
 
 .cifra-numero{
     display: block;
@@ -230,9 +227,6 @@ svg{
     color: var(--color-acento);
 }
 
-.cifra{
-    text-align: center;
-}
 
     /*Precio*/
 .precio{
@@ -250,6 +244,7 @@ svg{
     font-size: clamp(32px, calc(32px + (100vw - 390px) * .011429), 44px);
     font-weight: 600;
     line-height: var(--interlineado-portada);
+    color: var(--color-enlace);
 }
 
 .precio-unidad{
@@ -326,6 +321,53 @@ svg{
     outline-color: var(--color-texto-sobre-primario);
 }
 /* 3. Utilidades*/
+.texto-suave{
+    color:var(--color-texto-suave);
+}
 
+.oculto-visual{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border:0;
+}
 
 /* 4. Maquetación*/
+
+.cabecera{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-fondo);
+    box-shadow: var(--sombra);
+}
+
+.cabecera-contenido{
+    display: flex;
+    flex-wrap:wrap;
+    gap: var(--espacio-16);
+}
+
+.cifras-listas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-24);
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.cifra{
+    flex: 1 1 200px;
+}
+
+.portada-iamgen{
+    width: 100%;
+    aspect-ratio: 3/2;
+
+}
