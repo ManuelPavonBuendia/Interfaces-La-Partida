@@ -188,7 +188,7 @@ svg{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: var(--espacio-8);
     margin: 0;
     border-radius: var(--radio-tarjeta);
     background-color: var(--color-primario);
@@ -216,12 +216,13 @@ svg{
 
 .cifra{
     text-align: center;
+    flex: 1 1 200px;
 }
 
 .cifra-numero{
     display: block;
     font-family: var(--fuente-titulos);
-    font-size: clamp(40px, calc(40px + (100vw - 390px) * .015238), 56px);
+    font-size: var(--tamano-portada-movil);
     font-weight: 600;
     line-height: 1.1;
     color: var(--color-acento);
@@ -241,7 +242,7 @@ svg{
 
 .precio-importe{
     font-family: var(--fuente-titulos);
-    font-size: clamp(32px, calc(32px + (100vw - 390px) * .011429), 44px);
+    font-size: var(--tamano-h1-movil);
     font-weight: 600;
     line-height: var(--interlineado-portada);
     color: var(--color-enlace);
@@ -268,9 +269,8 @@ svg{
 
 .precio-destacado .etiqueta{
     top: 0;
-    right: auto;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    transform: translateY(-50%);
 }
 
 .tabla{
@@ -292,7 +292,7 @@ svg{
 
 .tabla th,
 .tabla td{
-    padding: 12px 16px;
+    padding:var(--espacio-16);
     border-bottom: 1px solid var(--color-borde-suave);
     text-align: left;
 }
@@ -343,17 +343,21 @@ svg{
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--color-fondo);
+    background-color: var(--color-superficie);
     box-shadow: var(--sombra);
 }
 
 .cabecera-contenido{
+    align-items: center;
+    justify-content: space-between;
     display: flex;
     flex-wrap:wrap;
     gap: var(--espacio-16);
+    padding-top: var(--espacio-16);
+    padding-bottom: var(--espacio-16);
 }
 
-.cifras-listas{
+.cifras-lista{
     display: flex;
     flex-wrap: wrap;
     gap: var(--espacio-24);
@@ -362,12 +366,49 @@ svg{
     list-style:none;
 }
 
-.cifra{
-    flex: 1 1 200px;
-}
-
 .portada-imagen{
+    object-fit: cover;
     width: 100%;
     aspect-ratio: 3/2;
-
+    border-radius: var(--radio-tarjeta);
 }
+
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-16);
+}
+
+.rejilla{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
+    gap:var(--medianil);
+}
+
+.portada-contenido{
+    display: grid;
+    gap:var(--medianil);
+}
+
+.precios{
+    display: grid;
+    gap:var(--medianil);
+}
+
+.pie-contenido{
+    display: grid;
+    gap:var(--medianil);
+}
+
+.contenedor{
+    max-width:calc(--ancho-maximo+2*--margen-lateral);
+    margin: 0 auto;
+    padding-left:var(--margen-lateral);
+    padding-right:var(--margen-lateral);
+}
+
+.seccion{
+    padding-top:var(--espacio-48);
+    padding-bottom:var(--espacio-64);
+}
+
