@@ -144,8 +144,30 @@ svg{
     flex-shrink: 0;
 }
 
+.pie{
+    background-color: var(--color-primario-oscuro);
+    color:var(--color-texto-sobre-primario);
+}
+
+.pie a{
+    color: var(--color-texto-sobre-primario);
+}
+
 .pie .logo{
     color: var(--color-texto-sobre-primario);
+}
+
+.pie-enlaces ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:var(--espacio-24);
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+.pie-enlaces{
+    border-style: solid;
 }
 
     /*Menu*/
@@ -180,6 +202,12 @@ svg{
     gap: var(--espacio-16);
     padding: var(--espacio-16) 0;
     border-bottom: 1px solid var(--color-borde-suave);
+}
+
+.eventos{
+    margin:0;
+    padding: 0;
+    list-style: none;
 }
 
 .evento-fecha {
@@ -219,12 +247,19 @@ svg{
     flex: 1 1 200px;
 }
 
+.cifras{
+    background-color: var(--color-primario);
+    color: var(--color-texto-sobre-primario);
+    padding-top: var(--espacio-32);
+    padding-bottom: var(--espacio-32);
+}
+
 .cifra-numero{
     display: block;
     font-family: var(--fuente-titulos);
     font-size: var(--tamano-portada-movil);
     font-weight: 600;
-    line-height: 1.1;
+    line-height:var(--interlineado-portada);
     color: var(--color-acento);
 }
 
@@ -292,7 +327,7 @@ svg{
 
 .tabla th,
 .tabla td{
-    padding:var(--espacio-16);
+    padding: var(--espacio-12) var(--espacio-16);
     border-bottom: 1px solid var(--color-borde-suave);
     text-align: left;
 }
@@ -365,7 +400,9 @@ svg{
     padding:0;
     list-style:none;
 }
-
+.portada{
+    background-color: var(--color-superficie);
+}
 .portada-imagen{
     object-fit: cover;
     width: 100%;
@@ -401,7 +438,7 @@ svg{
 }
 
 .contenedor{
-    max-width:calc(--ancho-maximo+2*--margen-lateral);
+    max-width:calc(var(--ancho-maximo) + 2 * var(--margen-lateral));
     margin: 0 auto;
     padding-left:var(--margen-lateral);
     padding-right:var(--margen-lateral);
