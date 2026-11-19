@@ -168,7 +168,8 @@ svg {
 }
 
 .pie-enlaces {
-  border-style: solid;
+  border-top: 1px solid var(--color-texto-sobre-primario);;
+  padding-top:var(--espacio-16);
 }
 
 /*Menu*/
@@ -451,35 +452,35 @@ svg {
 }
 
 @media (min-width: 48rem) {
-  .portada {
+  .portada-contenido{
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
   }
   .portada-texto {
-    grid-column: 1 / 7;
+    grid-column: 1 / 8;
     grid-row: 1;
   }
   .portada-imagen {
-    grid-column: 7 / 13;
+    grid-column: 8 / 13;
     grid-row: 1;
   }
 
   .eventos, .precios{
+    display: grid;
+    gap:var(--medianil);
     grid-template-columns: repeat(3, 1fr);
   }
 
   .pie-contenido{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "marca horario contacto"
-    "enlaces enlaces enlaces";
+    "marca horario "
+    "marca contacto"
+    "enlaces enlaces";
   }
 
   .pie-marca {grid-area: marca;}
   .pie-horario {grid-area: horario;}
   .pie-contacto {grid-area: contacto;}
   .pie-enlaces {grid-area: enlaces;}
-  .pie-enlaces {grid-area: enlaces;}
-  .pie-enlaces {grid-area: enlaces;}
-
 }
