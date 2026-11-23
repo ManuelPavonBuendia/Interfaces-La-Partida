@@ -362,6 +362,7 @@ svg {
 }
 /* 3. Utilidades*/
 .texto-suave {
+  margin-top: var(--espacio-12);
   color: var(--color-texto-suave);
 }
 
