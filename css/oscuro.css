@@ -1,0 +1,12 @@
+:root {
+--color-fondo: #15111B;
+--color-superficie: #211A2A;
+--color-texto: #EEE9F4;
+/* 13,33:1 sobre la superficie */
+--color-texto-suave: #B8AEC6;
+/* 7,93:1 sobre la superficie */
+--color-borde-suave: #3B3247;
+--color-enlace: #CBA6F0;
+/* 7,72:1 sobre la superficie */
+--sombra: none;
+}
