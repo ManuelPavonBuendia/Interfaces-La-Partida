@@ -146,6 +146,8 @@ svg {
 }
 
 .pie {
+  padding-top: var(--espacio-48);
+  padding-bottom: var(--espacio-48);
   background-color: var(--color-primario-oscuro);
   color: var(--color-texto-sobre-primario);
 }
@@ -200,6 +202,7 @@ svg {
 /*Evento*/
 
 .evento {
+  margin-bottom:10px;
   display: flex;
   align-items: center;
   gap: var(--espacio-16);
