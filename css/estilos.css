@@ -170,7 +170,7 @@ svg {
 }
 
 .pie-enlaces {
-  border-top: 1px solid var(--color-texto-sobre-primario);;
+  border-top: 1px solid var(--color-texto-sobre-primario);
   padding-top:var(--espacio-16);
 }
 
@@ -407,7 +407,24 @@ svg {
   list-style: none;
 }
 .portada {
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: var(--color-superficie);
+}
+
+.titulo-portada{
+  font-size: var(--tamano-portada-movil);
+  line-height: var(--interlineado-portada);
+}
+.antetitulo{
+  text-transform: uppercase; 
+  letter-spacing :0.08em;
+  font-size: var(--tamano-pequeno);
+  font-weight: 700;
+  color: var(--color-texto-suave);
+}
+.entrailla{
+  font-size: var(--tamano-entradilla);
 }
 .portada-imagen {
   object-fit: cover;
@@ -459,6 +476,9 @@ svg {
   .portada-contenido{
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
+  }
+  .titulo-portada{
+    font-size:var(--tamano-portada-escritorio);
   }
   .portada-texto {
     grid-column: 1 / 8;
