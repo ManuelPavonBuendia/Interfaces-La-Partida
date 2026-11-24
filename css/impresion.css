@@ -12,8 +12,8 @@ body {
 .menu,
 .botones,
 .boton,
-.destacado-imagen,
-.tarjeta-imagen {
+.portada-imagen,
+.tarjeta-icono {
   display: none;
 }
 
@@ -21,7 +21,13 @@ body {
 .tarjeta {
   box-shadow: none;
 }
-.tarjeta, .tabla-precios tr {
+
+.etiqueta-esquina {
+  position: relative;
+  background-color: var(--color-acento);
+}
+
+.tarjeta, .precios, .precio {
   border: 1px solid #000000;
   break-inside: avoid;
 }

@@ -98,7 +98,6 @@ svg {
   border-radius: var(--radio-etiqueta);
   font-size: var(--tamano-pequeno);
   font-weight: 700;
-  background-color: var(--color-acento);
   color: var(--color-texto-sobre-acento);
 }
 
@@ -106,8 +105,10 @@ svg {
   background-color: var(--color-borde-suave);
   color: var(--color-texto);
 }
+
 .etiqueta-esquina {
   position: absolute;
+  background-color: var(--color-acento);
   top: 16px;
   right: 16px;
 }
