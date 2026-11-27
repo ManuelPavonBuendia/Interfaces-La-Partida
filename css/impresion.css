@@ -24,10 +24,13 @@ body {
 
 .etiqueta-esquina {
   position: relative;
-  background-color: var(--color-acento);
+  left: 0px;
+  top: 0px;
 }
 
-.tarjeta, .precios, .precio {
+.tarjeta,
+.precios,
+.precio {
   border: 1px solid #000000;
   break-inside: avoid;
 }
